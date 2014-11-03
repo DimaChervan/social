@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="socialStream">
+<head>
+    <meta charset="UTF-8">
+    <title>Social stream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+    <script src="moment.js"></script>
+    <script src="app.js"></script>
+    <social-tile  class="preload" urls='{ "feeds" : { "facebook" : { "id" : 112389354005, "limit" : 5 }, "instagram" : { "id" : "#football", "limit" : 5 }, "twitter" : { "id" : "#football", "limit" : 5 } }, "interval" : 300000, "postLimit" : 100 }'></social-tile>
+</body>
+</html>

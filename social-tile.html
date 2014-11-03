@@ -1,0 +1,21 @@
+<div class="masonry">
+    <div class="item" ng-repeat="post in data">
+        <div class="wrap">
+            <div class="owner">
+                <img ng-src="{{post.userPicture}}">
+                <a target="_blank" ng-href="{{post.userLink}}">{{post.name}}</a>
+            </div>
+            <div class="message">{{post.description}}</div>
+            <img ng-src="{{post.picture}}">
+            <div class="social_counts">
+                <span class="likes">{{post.likes}}</span>
+                <span class="comments">{{post.comments}}</span>
+            </div>
+        </div>
+        <div class="information">
+            <div class="network_{{post.network}}"></div>
+            <a class="post_link" target="_blank" ng-href="{{post.link}}">{{post.link | checkLink}}</a>
+            <span class="created_time">{{post.time}}</span>
+        </div>
+    </div>
+</div>

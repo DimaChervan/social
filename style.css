@@ -1,0 +1,141 @@
+body {
+    font: 1em/1.67 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #e9e8e4;
+}
+
+.masonry {
+    padding: 0;
+    column-gap: 1.5em;
+    font-size: .75em;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    width: 100%;
+    margin: 3em auto;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    color: #737272;
+}
+
+.item .wrap {
+    padding: 1em 1em .5em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item a {
+    text-decoration: none;
+    color: #359CC6;
+}
+
+.item a:hover {
+    color: #E88F00;
+    border-bottom: 1px dotted #9F1D35;
+}
+
+.owner {
+    margin-bottom: .5em;
+}
+
+.owner img {
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.item .created_time {
+    float: right;
+}
+
+.item .likes, .item .shares, .item .comments {
+    display: inline-block;
+    padding-left: 16px;
+    line-height: 15px;
+    vertical-align: middle;
+}
+
+.item .likes {
+    background: url("like.png")  no-repeat;
+}
+
+.item .comments {
+    background: url("comment.png") no-repeat;
+}
+
+.information {
+    padding: .5em 1em;
+    background: #ccc;
+}
+
+.information div {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.network_instagram {
+    background: url("instagram.png") no-repeat;
+}
+
+.network_facebook {
+    background: url("facebook.png") no-repeat;
+}
+
+.network_twitter {
+    background: url("twitter.png") no-repeat;
+}
+
+.post_link {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+.preload {
+    background: url("preloader.GIF") no-repeat;
+    height: 64px;
+    position: absolute;
+    width: 64px;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -32px;
+}
